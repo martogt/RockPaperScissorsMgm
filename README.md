@@ -1,5 +1,5 @@
-# <center>🐍 Rock / Paper / Scissors 🐍</center>
+# 🐍 Rock / Paper / Scissors 🐍
 
-<h3><center> Sample console game project </center></h3>
+<h3> Sample console game project </h3>
 
-# <p style="color:purple;"> Documentation section: </p>
+# Documentation section:
