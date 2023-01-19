@@ -1,2 +1,2 @@
-# RockPaperScissorsMgm
-Softuni - Sample console game project
+# Rock / Paper / Scissors 
+Sample console game project
