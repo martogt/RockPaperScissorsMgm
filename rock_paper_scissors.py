@@ -1,4 +1,6 @@
 import random
+import colorama
+colorama.init(autoreset=True)
 
 rock = "Rock"
 paper = "Paper"
@@ -7,11 +9,11 @@ computer_move = ""
 
 player_move = input("Choose [r]ock, [p]aper, [s]cissors:")
 
-if player_move == "r":
+if player_move.lower() == "r":
     player_move = rock
-elif player_move == "p":
+elif player_move.lower() == "p":
     player_move = paper
-elif player_move == "s":
+elif player_move.lower() == "s":
     player_move = scissors
 else:
     raise SystemExit("invalid Input. Try again...")
@@ -33,12 +35,12 @@ if (player_move == rock and computer_move == scissors) or (player_move == paper 
         player_move == scissors and computer_move == paper):
     print("You win!")
 elif player_move == computer_move:
-    print("Draw!")
+    print(f"Draw!")
 else:
     print("You lose!")
 
 while True:
-    play_again = input("Do you want to restart? Yes or No\n")
+    play_again = input(f"Do you want to restart? {colorama.Fore.RED}Yes or No\n")
 
     if play_again.lower() == "y":
         exec(open("./rock_paper_scissors.py").read())
