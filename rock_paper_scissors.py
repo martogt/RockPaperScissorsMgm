@@ -36,3 +36,14 @@ elif player_move == computer_move:
     print("Draw!")
 else:
     print("You lose!")
+
+while True:
+    play_again = input("Do you want to restart? Yes or No\n")
+
+    if play_again.lower() == "y":
+        exec(open("./rock_paper_scissors.py").read())
+    elif play_again.lower() == "n":
+        exit()
+    else:
+        print("Incorrect answer!")
+        continue
