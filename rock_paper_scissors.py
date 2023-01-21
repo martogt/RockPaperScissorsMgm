@@ -7,7 +7,7 @@ paper = "Paper"
 scissors = "Scissors"
 computer_move = ""
 
-player_move = input("Choose [r]ock, [p]aper, [s]cissors:")
+player_move = input(f"Choose {colorama.Fore.LIGHTWHITE_EX}[r]ock, {colorama.Fore.LIGHTGREEN_EX}[p]aper, {colorama.Fore.LIGHTRED_EX}[s]cissors:")
 
 if player_move.lower() == "r":
     player_move = rock
@@ -33,11 +33,11 @@ print(f"The computer chose {computer_move}")
 
 if (player_move == rock and computer_move == scissors) or (player_move == paper and computer_move == rock) or (
         player_move == scissors and computer_move == paper):
-    print("You win!")
+    print(f"{colorama.Back.LIGHTGREEN_EX}{colorama.Fore.LIGHTWHITE_EX}You win!")
 elif player_move == computer_move:
-    print(f"Draw!")
+    print(f"{colorama.Back.LIGHTWHITE_EX}Draw!")
 else:
-    print("You lose!")
+    print(f"{colorama.Back.RED}You lose!")
 
 while True:
     play_again = input(f"Do you want to restart? {colorama.Fore.RED}Yes or No\n")
